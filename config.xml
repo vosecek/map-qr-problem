@@ -60,10 +60,4 @@
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
-    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyABDyfrOXNFi_J1wlocJv1Ivxumy-KWVoM" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyBnNEI-zgVI6v0mUre0NuBP2XHQDXKx89E" />
-        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
-        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
-    </plugin>
 </widget>
