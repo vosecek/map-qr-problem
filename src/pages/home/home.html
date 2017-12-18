@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>map</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)='openQrScanner()'>
+        <ion-icon name='camera'></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content no-bounce>
+  <div #mapdiv id='mapdiv' [hidden]='isQr'>
+  </div>
 </ion-content>
