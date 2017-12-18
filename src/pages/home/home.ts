@@ -11,7 +11,6 @@ declare var cordova: any;
 export class HomePage {
 
 	@ViewChild('mapdiv') mapdiv: ElementRef;
-	isQr: boolean = false;
 	map: any;
 
 	constructor(
@@ -22,16 +21,18 @@ export class HomePage {
 	}
 
 	openQrScanner(): void {
-		this.isQr = true;
 		let scanner = this.modal.create('ModalPage');
-		scanner.present();
 		scanner.onDidDismiss(() => {
-			this.isQr = false;
+			console.log('dismiss');
+			setTimeout(() => {
+				cordova.fireDocumentEvent('plugin_touch', {});
+			}, 500);
 		});
+		scanner.present();
 	}
 
 	ionViewDidEnter(): void {
-
+		console.log('ionViewDidEnter');
 		let cameraTarget = {
 			'target': { "lat": 50, "lng": 14 },
 			'zoom': 12
