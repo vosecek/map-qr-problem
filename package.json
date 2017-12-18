@@ -51,7 +51,7 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-qrscanner": {},
+      "cordova-plugin-qrscanner": {}
     },
     "platforms": [
       "ios"
